@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>ToDo98</title>
+  </head>
+  <body>
+    <div id="mainFrame" class="window">
+      <div class="title-bar drag">
+        <div class="title-bar-text">ToDo98 v0.0.1</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div id="content" class="window-body">
+        <div class="sidebar-wrapper">
+          <ul class="tree-view nav">
+            <li>
+              <details open>
+                <summary>Home</summary>
+                <ul>
+                  <li>
+                    <div class="nav-btn all"><a href="#">All Tasks</a></div>
+                  </li>
+                  <li>
+                    <div class="nav-btn today"><a href="#">Today</a></div>
+                  </li>
+                  <li>
+                    <div class="nav-btn week"><a href="#">This Week</a></div>
+                  </li>
+                  <li>
+                    <div class="nav-btn important">
+                      <a href="#">Important</a>
+                    </div>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details closed>
+                <summary>Projects</summary>
+              </details>
+            </li>
+          </ul>
+          <div class="controls">
+            <button id="btn-newtask">New Task</button>
+            <button id="btn-removeSel">Remove Selected</button>
+          </div>
+        </div>
+        <div data-list="all" class="todo-content-wrapper">
+          <!-- <fieldset class="todo-card">
+            <legend>#1</legend>
+            <div class="todo-container">
+              <div class="todo-check">
+                <input id="done" type="checkbox" />
+                <label for="done">Done</label>
+              </div>
+              <div class="details">
+                <div><strong>Title: </strong><span>Do Homework</span></div>
+                <div>
+                  <strong>Details:</strong>
+                  No further details given.
+                </div>
+                <div><strong>Created: </strong>09.01.2022, 15:08</div>
+                <div><strong>Due: </strong>11.01.2022, 15:08</div>
+              </div>
+            </div>
+          </fieldset> -->
+        </div>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field all">Total: 0</p>
+        <p class="status-bar-field today">Today: 0</p>
+        <p class="status-bar-field week">This Week: 0</p>
+        <p class="status-bar-field important">Important: 0</p>
+      </div>
+    </div>
+    <section id="popup-container"></section>
+  </body>
+</html>

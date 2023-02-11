@@ -1,0 +1,58 @@
+#popup {
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 11;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#popup .window {
+  position: absolute;
+  z-index: 12;
+}
+
+#popup .window .drag {
+  z-index: 13;
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup-content fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.popup-content fieldset div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-content input {
+  width: 200px;
+}
+
+.popup-content input[type='datetime-local'] {
+  width: 195px;
+}
+
+.popup-content textarea {
+  resize: none;
+  width: 200px;
+  height: 50px;
+}
+
+.popup-content .importantContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popup-content .popup-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
